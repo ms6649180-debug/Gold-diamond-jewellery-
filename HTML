@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BALA Ji Gold | Gold & Diamond Jewellery</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <span>BALA</span>
+      <small>JI GOLD</small>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+      <p class="small-title">WELCOME TO BALA JI GOLD</p>
+
+      <h1>
+        Jewellery That
+        <span>Shines Forever</span>
+      </h1>
+
+      <p>
+        Discover elegant Gold & Diamond jewellery
+        crafted to make every moment special.
+      </p>
+
+      <a href="#collection" class="gold-btn">
+        Explore Collection
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="features">
+
+    <div>
+      <span>✦</span>
+      <h3>Premium Quality</h3>
+      <p>Beautiful jewellery with trusted quality.</p>
+    </div>
+
+    <div>
+      <span>◆</span>
+      <h3>Elegant Designs</h3>
+      <p>Modern designs for every occasion.</p>
+    </div>
+
+    <div>
+      <span>♢</span>
+      <h3>Trusted Jewellery</h3>
+      <p>Made with care and attention to detail.</p>
+    </div>
+
+  </section>
+
+
+  <!-- COLLECTION -->
+  <section class="collection" id="collection">
+
+    <div class="section-title">
+      <p>OUR COLLECTION</p>
+      <h2>Featured Jewellery</h2>
+      <div class="line"></div>
+    </div>
+
+    <div class="categories">
+      <button onclick="filterProducts('all')">All</button>
+      <button onclick="filterProducts('ring')">Rings</button>
+      <button onclick="filterProducts('necklace')">Necklaces</button>
+      <button onclick="filterProducts('earring')">Earrings</button>
+      <button onclick="filterProducts('bracelet')">Bracelets</button>
+    </div>
+
+    <div class="products" id="productList">
+
+      <!-- PRODUCT 1 -->
+      <div class="product-card" data-category="ring">
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80"
+            alt="Diamond Ring">
+
+          <button class="heart" onclick="addWishlist(this)">♡</button>
+        </div>
+
+        <div class="product-info">
+          <p>DIAMOND COLLECTION</p>
+          <h3>Royal Diamond Ring</h3>
+          <h4>₹35,000</h4>
+          <button onclick="enquire('Royal Diamond Ring')">
+            Enquire Now
+          </button>
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT 2 -->
+      <div class="product-card" data-category="necklace">
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80"
+            alt="Gold Necklace">
+
+          <button class="heart" onclick="addWishlist(this)">♡</button>
+        </div>
+
+        <div class="product-info">
+          <p>GOLD COLLECTION</p>
+          <h3>Royal Gold Necklace</h3>
+          <h4>₹85,000</h4>
+          <button onclick="enquire('Royal Gold Necklace')">
+            Enquire Now
+          </button>
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT 3 -->
+      <div class="product-card" data-category="earring">
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80"
+            alt="Diamond Earrings">
+
+          <button class="heart" onclick="addWishlist(this)">♡</button>
+        </div>
+
+        <div class="product-info">
+          <p>DIAMOND COLLECTION</p>
+          <h3>Elegant Diamond Earrings</h3>
+          <h4>₹28,000</h4>
+          <button onclick="enquire('Elegant Diamond Earrings')">
+            Enquire Now
+          </button>
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT 4 -->
+      <div class="product-card" data-category="bracelet">
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=80"
+            alt="Gold Bracelet">
+
+          <button class="heart" onclick="addWishlist(this)">♡</button>
+        </div>
+
+        <div class="product-info">
+          <p>GOLD COLLECTION</p>
+          <h3>Classic Gold Bracelet</h3>
+          <h4>₹42,000</h4>
+          <button onclick="enquire('Classic Gold Bracelet')">
+            Enquire Now
+          </button>
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT 5 -->
+      <div class="product-card" data-category="ring">
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1603561596112-db6a5d3e3a16?auto=format&fit=crop&w=800&q=80"
+            alt="Gold Ring">
+
+          <button class="heart" onclick="addWishlist(this)">♡</button>
+        </div>
+
+        <div class="product-info">
+          <p>GOLD COLLECTION</p>
+          <h3>Classic Gold Ring</h3>
+          <h4>₹22,000</h4>
+          <button onclick="enquire('Classic Gold Ring')">
+            Enquire Now
+          </button>
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT 6 -->
+      <div class="product-card" data-category="necklace">
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=80"
+            alt="Diamond Necklace">
+
+          <button class="heart" onclick="addWishlist(this)">♡</button>
+        </div>
+
+        <div class="product-info">
+          <p>DIAMOND COLLECTION</p>
+          <h3>Diamond Queen Necklace</h3>
+          <h4>₹1,25,000</h4>
+          <button onclick="enquire('Diamond Queen Necklace')">
+            Enquire Now
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="about-image">
+      <img
+        src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1000&q=80"
+        alt="Jewellery">
+    </div>
+
+    <div class="about-content">
+
+      <p class="small-title">ABOUT BALA JI GOLD</p>
+
+      <h2>Beauty Crafted<br>With Passion</h2>
+
+      <p>
+        At BALA Ji Gold, we believe jewellery is more than
+        an accessory. It is a memory, an emotion and a symbol
+        of love.
+      </p>
+
+      <p>
+        Explore our beautiful collection of Gold and Diamond
+        jewellery designed for weddings, celebrations and
+        everyday elegance.
+      </p>
+
+      <a href="#contact" class="gold-btn">
+        Contact Us
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="section-title">
+      <p>GET IN TOUCH</p>
+      <h2>Visit BALA Ji Gold</h2>
+      <div class="line"></div>
+    </div>
+
+    <div class="contact-box">
+
+      <div>
+        <span>📍</span>
+        <h3>Our Store</h3>
+        <p>Your Shop Address<br>Rajasthan, India</p>
+      </div>
+
+      <div>
+        <span>📞</span>
+        <h3>Call Us</h3>
+        <p>+91 XXXXX XXXXX</p>
+      </div>
+
+      <div>
+        <span>💬</span>
+        <h3>WhatsApp</h3>
+        <p>Chat with us for jewellery enquiries.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      BALA Ji GOLD
+    </div>
+
+    <p>
+      © 2026 BALA Ji Gold. All Rights Reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- WHATSAPP -->
+  <a
+    class="whatsapp"
+    href="https://wa.me/91XXXXXXXXXX"
+    target="_blank">
+    💬
+  </a>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
